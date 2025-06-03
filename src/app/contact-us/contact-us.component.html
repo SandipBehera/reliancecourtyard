@@ -1,0 +1,124 @@
+<section class="hero-section">
+    <div class="overlay-content">
+      <div class="container" style="padding: 2rem;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="overview-text">
+                    <span style="border-bottom: 3px double #00426b;">Location</span>
+                </h2>
+            </div>
+            <div class="col-md-4">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7713.316932867991!2d78.305109!3d17.407611!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb95ca9273dd09%3A0x2afdbcc07b54a125!2sThe%20Cascades%2C%20GHR%20LAKSHMI%20URBAN%20BLOCKS!5e1!3m2!1sen!2sin!4v1748901421397!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-8">
+                <div class="row g-4">
+                    <div class="col-md-6 col-12">
+                      <div class="info-block">
+                        <mat-icon class="info-icon" style="color: #00426b; font-size: 2rem;width: auto;height: auto;">location_on</mat-icon>
+                        <h4><strong>STRATEGIC CONNECTIVITY</strong></h4>
+                        <ul class="list-unstyled small">
+                          <li>Outer Ring Road (ORR) – 5 Mins*</li>
+                          <li>Rajiv Gandhi International Airport – 30–35 Mins*</li>
+                          <li>Financial District – 10–15 Mins*</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="info-block">
+                       <mat-icon class="info-icon" style="color: #00426b; font-size: 2rem;width: auto;height: auto;">shopping_cart</mat-icon>
+                        <h4><strong>LEISURE & ENTERTAINMENT</strong></h4>
+                        <ul class="list-unstyled small">
+                          <li>Inorbit Mall – 20–25 Mins*</li>
+                          <li>Gachibowli Stadium – 15–20 Mins*</li>
+                          <li>Shilparamam – 20–25 Mins*</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="info-block">
+                        <mat-icon class="info-icon" style="color: #00426b; font-size: 2rem;width: auto;height: auto;">school</mat-icon>
+                        <h4><strong>SCHOOLS & INSTITUTES</strong></h4>
+                        <ul class="list-unstyled small">
+                          <li>Oakridge International – 10–15 Mins*</li>
+                          <li>Indian School of Business – 10–15 Mins*</li>
+                          <li>University of Hyderabad – 20–25 Mins*</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="info-block">
+                        <mat-icon class="info-icon" style="color: #00426b; font-size: 2rem;width: auto;height: auto;">computer</mat-icon>
+                        <h4><strong>IT HUBS</strong></h4>
+                        <ul class="list-unstyled small">
+                          <li>HITEC City – 20–25 Mins*</li>
+                          <li>Gachibowli IT Park – 15–20 Mins*</li>
+                          <li>Mindspace Madhapur – 20–25 Mins*</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+    </div>
+    </div>
+  </section>
+  <div class="contact-form-container">
+      <h2 class="overview-text" style="color: white !important;">Contact Us</h2>
+    
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" formControlName="name" class="form-control" />
+          <small *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched" class="error">
+            Name is required (min 3 characters)
+          </small>
+        </div>
+    
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" formControlName="email" class="form-control" />
+          <small *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched" class="error">
+            Enter a valid email address
+          </small>
+        </div>
+    
+        <!-- Phone -->
+        <div class="form-group" style="display: flex;">
+            <!-- Country Code Input -->
+            <input
+              type="text"
+              class="form-control"
+              formControlName="countryCode"
+              placeholder="+91"
+              style="max-width: 100px"
+            />
+        
+            <!-- Phone Number Input -->
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              class="form-control input-custom"
+              placeholder="Mobile Number*"
+              required
+              formControlName="phone"
+            />
+         
+        
+          <small
+            *ngIf="contactForm.controls['phone'].invalid && contactForm.controls['phone'].touched"
+            class="error"
+          >
+            Enter a valid 10-digit phone number
+          </small>
+        
+        </div> 
+        <button type="submit" [disabled]="contactForm.invalid || loading" class="btn btn-primary"> 
+          <span *ngIf="!loading">Submit</span>
+          <span *ngIf="loading" class="spinner"></span>
+        </button>
+      </form>
+    </div>
+    

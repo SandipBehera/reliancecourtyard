@@ -1,0 +1,347 @@
+.property-card {
+    position: relative;
+    max-width: 600px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    margin: auto;
+    font-family: "Playfair Display,Georgia,serif";
+  }
+  
+  .card-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Playfair Display,Georgia,serif";
+  }
+  
+  .location {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    display: flex;
+    align-items: center;
+  }
+  
+  .location i {
+    margin-right: 8px;
+    color: gray;
+  }
+  
+  .rera {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 3rem;
+  }
+  
+  .bhk h3, .price h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .bhk p, .price p {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  .cta-btn {
+    display: block;
+    width: 100%;
+    background: #00426b;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  .cta-btn:hover {
+    background: #450a17;
+  }
+  
+  .vector-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: url('../../../public/img/Vector.webp') no-repeat center;
+    background-size: contain;
+    opacity: 0.2;
+    background-color: brown;
+  }
+  /* Container */
+.beacon-container {
+    text-align: center;
+    font-family: 'Playfair Display', Georgia, serif;
+    margin: 50px 0;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 28px;
+    color: #a08b6e;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Stats Grid */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 37px;
+    max-width: 900px;
+    margin: auto;
+
+  }
+  
+  /* Stat Box */
+  .stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    width: 183px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  /* Upper Part */
+  .stat-top {
+    background: #00426b;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  /* Bottom Part */
+  .stat-bottom {
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+    background: #ffff;
+    width: 100%;
+  }
+  .hero-image{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 16px;
+        max-width: 900px;
+        margin: auto;
+        padding: 0.5rem;
+      }
+      /* Stat Box */
+  .stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    width: 160px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  /* Target the last child if it's in an incomplete row */
+  .stats-grid .stat-box:nth-last-child(1):nth-child(odd) {
+    grid-column: span 2; /* Make it take full row */
+    justify-self: center; /* Center it within that row */
+  }
+    }
+
+    .desk-none {
+        display: block;
+      }
+      
+      .float-bottom.gcbr {
+        display: block;
+        position: fixed;
+        bottom: 1px;
+        z-index: 99;
+      }
+      .float-bottom {
+        position: fixed;
+        bottom: 0px;
+        z-index: 99;
+        width: 100%;
+        padding: 9px 0px;
+        background: #282343;
+        border-radius: 0rem;
+      }
+      .one-box {
+        text-align: center;
+        float: left;
+        width: 33%;
+      }
+      .float-bottom.forall .txt-icon {
+        font-size: 12px;
+      }
+      .float-bottom.forall {
+        bottom: 0rem;
+        margin-left: 0rem;
+      }
+      .home .noth {
+        display: none;
+      }
+      .img-icon i {
+        background: transparent;
+        padding: 2px 5px;
+        color: #fcf5f5;
+        font-size: 1.2rem;
+        animation: shake 4.72s ease infinite;
+      }
+      .txt-icon {
+        color: #fff;
+        font-size: 13px;
+        animation: shake 4.72s ease infinite;
+      }
+      @keyframes shake {
+        0% {
+          transform: translate(1px, 1px) rotate(0deg);
+        }
+        10% {
+          transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20% {
+          transform: translate(-3px, 0px) rotate(1deg);
+        }
+        30% {
+          transform: translate(3px, 2px) rotate(0deg);
+        }
+        40% {
+          transform: translate(1px, -1px) rotate(1deg);
+        }
+        50% {
+          transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        60% {
+          transform: translate(-3px, 1px) rotate(0deg);
+        }
+        70% {
+          transform: translate(3px, 1px) rotate(-1deg);
+        }
+        80% {
+          transform: translate(-1px, -1px) rotate(1deg);
+        }
+        90% {
+          transform: translate(1px, 2px) rotate(0deg);
+        }
+        100% {
+          transform: translate(1px, -2px) rotate(-1deg);
+        }
+      }
+      @media (min-width: 100px) and (max-width: 768px) {
+        .desk-none {
+          display: block;
+        }
+        .float-bottom.gcbr {
+          display: block;
+          position: fixed;
+          bottom: 1px;
+          z-index: 99;
+        }
+        .float-bottom {
+          position: fixed;
+          bottom: 0px;
+          z-index: 99;
+          width: 93%;
+          padding: 9px 0px;
+          background: #282343;
+          border-radius: 2rem;
+        }
+        .one-box {
+          text-align: center;
+          float: left;
+          width: 30%;
+        }
+        .float-bottom.forall .txt-icon {
+          font-size: 12px;
+        }
+        .float-bottom.forall {
+          bottom: 1rem;
+          margin-left: 1px;
+        }
+        .home .noth {
+          display: none;
+        }
+        .img-icon i {
+          background: transparent;
+          padding: 2px 5px;
+          color: #fcf5f5;
+          font-size: 1.2rem;
+        }
+        .txt-icon {
+          color: #fff;
+          font-size: 13px;
+        }
+      }
+      
+      @media (min-width: 350px) and (max-width: 400px) {
+        .floating-btn.forall {
+          right: -36%;
+        }
+        .floating-btn {
+          right: -36%;
+        }
+      }
+      
+      @media (min-width: 401px) and (max-width: 500px) {
+        .floating-btn.forall {
+          right: -32%;
+        }
+        /*.floating-btn {right: -36%;top: 35%;}*/
+        .floating-btn {
+          right: -34%;
+          top: 48%;
+        }
+      }
+
+.overview-text{
+  font-family: "Bebas Neue", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #00426b; 
+  text-transform: uppercase; 
+  font-size: 2rem; 
+  font-weight: 700; 
+  position: relative;
+}
+      

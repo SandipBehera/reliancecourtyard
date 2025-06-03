@@ -1,0 +1,38 @@
+<div>
+    <app-navbar></app-navbar>
+  <app-slider></app-slider>
+  <div class="floating-bar" *ngIf="showBar">
+    <a (click)="open('Please Fill Contact Information')" class="bar-btn">
+      <mat-icon fontIcon="mail" class="bar-icon"></mat-icon>
+      <span>Enquire</span>
+    </a>
+    <a href="tel:+919182786926" class="bar-btn">
+      <mat-icon fontIcon="call" class="bar-icon"></mat-icon>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/9182786926" target="_blank" class="bar-btn">
+      <i class="fa-brands fa-whatsapp bar-icon" ></i>
+      <span>Whatsapp</span>
+    </a>
+  </div>
+  <div class="clearfix"></div>
+  <section class="fade-in">
+    <app-about-project></app-about-project>
+  </section>
+  <section class="slide-up">
+    <app-project-details></app-project-details>
+  </section>
+  <section class="fade-in">
+    <app-floor-plan></app-floor-plan>
+  </section>
+  <section class="fade-in">
+    <app-gallery></app-gallery>
+  </section>
+  <section class="contact-us-section  fade-in">
+    <app-contact-us ngSkipHydration></app-contact-us>
+  </section>
+  <section class="fade-in">
+    <app-footer></app-footer>
+  </section>
+  
+  </div>

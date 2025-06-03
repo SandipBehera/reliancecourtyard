@@ -1,0 +1,65 @@
+<div class="beacon-container">
+    <h2 class="title">
+      <span style="border-bottom: 3px double #d8b50db5;">A masterpiece for the art of life</span></h2>
+    <div class="stats-grid">
+      <div class="stat-box" *ngFor="let stat of stats">
+        <div class="stat-top">{{ stat.value }}</div>
+        <div class="stat-bottom">{{ stat.label }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-darkblue text-white text-center py-5" style="box-shadow: inset 2px 3px #d8b50db5;">
+    <h2 class="display-5 fw-bold">Explore a World of Amenities at Different Heights.</h2>
+  </div>
+  <ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+    <ng-template ngbSlide>
+      <div class="carousel-item-wrapper position-relative">
+        <img
+          src="../img/cascades/luxury-apartments-cascades-neopolis-gallery-img5.jpg"
+          class="w-100"
+          style="object-fit: cover; height: 100vh;"
+          alt="Background Image"
+        />
+  
+        <!-- Overlayed Content -->
+        <div
+          class="carousel-content-overlay text-dark"
+          [style.position]="'absolute'"
+          [style.top]="'0'"
+          [style.left]="'0'"
+          [style.right]="'0'"
+          [style.bottom]="'0'"
+          style="background: rgba(255,255,255,0.95); overflow-y: auto;"
+        >
+          
+  
+          <div class="container my-5">
+            <div class="row g-4">
+              <div class="col-md-6" *ngFor="let amenity of amenities">
+                <div class="p-4 rounded bg-light h-100 shadow-sm">
+                  <div class="d-flex align-items-start">
+                    <!-- Icon Placeholder -->
+                    <div class="me-3">
+                      <div class="icon-placeholder bg-transparent text-white d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                        <img [src]="amenity.icon" alt="{{ amenity.title }}" class="img-fluid" style="max-width: 100%; max-height: 100%;" />
+                      </div>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold text-uppercase text-brown mb-1">{{ amenity.title }}</h5>
+                      <p class="small text-muted mb-2">{{ amenity.subtitle }}</p>
+                      <ul class="small text-dark ps-3 mb-0">
+                        <li *ngFor="let item of amenity.features">{{ item }}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  
+  
+  

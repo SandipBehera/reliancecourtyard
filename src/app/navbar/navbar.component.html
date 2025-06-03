@@ -1,0 +1,35 @@
+<nav class="navbar">
+    <div class="navbar-left">
+      <img src="../img/cascades/logo.svg" alt="Logo" class="logo" />
+    </div>
+  
+    <div class="navbar-right">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#feature">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+  
+      <div class="hamburger" (click)="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Sidebar -->
+  <div class="sidebar" [class.open]="sidebarOpen">
+    <button class="close-btn" (click)="closeSidebar()">×</button>
+    <a href="#home" (click)="closeSidebar()">Home</a>
+    <a href="#feature" (click)="closeSidebar()">Features</a>
+    <a href="#pricing" (click)="closeSidebar()">Pricing</a>
+    <a href="#location" (click)="closeSidebar()">Location</a>
+    <a href="#contact" (click)="closeSidebar()">Contact</a>
+  </div>
+  
+  <!-- Overlay for mobile -->
+  <div class="overlay" *ngIf="sidebarOpen" (click)="closeSidebar()"></div>
+  

@@ -1,0 +1,61 @@
+<ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+    <ng-template ngbSlide>
+      <div class="carousel-item-wrapper">
+        <img [src]="ismobile ?'../img/cascades/prop3.jpeg':'../img/cascades/banner.jpg'" alt="Random first slide" />
+  
+        <!-- Black Overlay -->
+        <!-- <div class="overlay" [style.display]="ismobile ? 'absolute' : 'absolute'"></div> -->
+  
+        <!-- Centered Text Content -->
+        <div class="carousel-content" [style.display]="ismobile ? 'none' : 'absolute'">    
+          <div class="property-card">
+            <div class="card-content">
+              <h2>The Cascades Neopolis</h2>
+              <p class="location">
+                <mat-icon>map</mat-icon>Neopolis, Kokapet Hyderabad
+              </p>
+              <p class="rera">RERA Registration No:P02400009538</p>
+  
+              <hr />
+  
+              <div class="details">
+                <div class="bhk">
+                  <h3>3, 4, & 5 BHK Flats</h3>
+                  <p>Luxury Apartments</p>
+                </div>
+                <div class="price">
+                  <h3>₹ 10,000 PSF</h3>
+                  <p>Onwards <b style="color: red;">*</b></p>
+                </div>
+              </div>
+  
+              <button class="cta-btn" (click)="open('Get Price Breakdown')">Get Price Breakdown</button>
+            </div>
+            <div class="vector-bg"></div>
+          </div>
+        </div>
+        <div class="carousel-content" [style.display]="ismobile ? 'absolute' : 'none'" >    
+          <div class="property-card" style="background-color:  rgba(0, 0, 0, 0.6) !important;">
+            <div class="card-content">
+              <img src="../img/cascades/logo.svg" alt="Logo" class="logo" style="height: auto;"/>
+              <span style="text-align: center;color:#fff;padding: 2.5rem;">powerful trio by</span>
+              <div style="display: flex;gap:10px">
+                <div>
+                  <img src="../img/cascades/ghrtitania_logo.jpeg" alt="GHR Realty" class="company-logo" style="height:5vh !important;width: auto;"/>
+                </div>
+                <div>
+                  <img src="../img/cascades/114.avif" alt="Laksmi Infra" class="company-logo" style="height:4.5vh !important;width: auto;"/>
+                </div>
+                <div>
+                  <img src="../img/cascades/urbanblocks.webp" alt="urbanblocks Infra" class="company-logo" style="background-color: #00426b;" />
+                </div>
+              </div>
+              <!-- <button class="cta-btn" (click)="open('Get Price Breakdown')">Get Price Breakdown</button> -->
+            </div>
+            <!-- <div class="vector-bg"></div> -->
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  

@@ -1,0 +1,51 @@
+.floorplan-modal {
+    background-color: #00426b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .floorplan-modal .modal-content {
+    background-color: #00426b;
+    border-radius: 12px;
+    border: 1px solid #883452;
+  }
+  
+  .input-custom {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #e8d7de;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0;
+    border-radius: 0;
+  }
+  
+  .input-custom::placeholder {
+    color: #f3e9ec;
+  }
+  
+  .input-custom:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+  }
+  
+  button.btn-light {
+    background-color: #fff;
+    color: #000;
+    border-radius: 0;
+    padding: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-light:hover {
+    background-color: #f8f8f8;
+  }
+  .error{
+    color: #f7f1f1;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+  }

@@ -1,0 +1,50 @@
+<div class="plans-section container text-center pt-5">
+    <h2 class="plans-title">PLANS</h2>
+  
+    <ul class="nav nav-tabs justify-content-center custom-tabs" id="plansTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="master-tab" data-bs-toggle="tab" data-bs-target="#master" type="button" role="tab">
+          MASTER PLAN
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="floor-tab" data-bs-toggle="tab" data-bs-target="#floor" type="button" role="tab">
+          FLOOR PLAN
+        </button>
+      </li>
+    </ul>
+  
+    <div class="tab-content mt-4">
+      <!-- Master Plan Tab -->
+      <div class="tab-pane fade show active" id="master" role="tabpanel">
+        <p class="plan-description">The Cascades Neopolis Where limitless living meets comfort, luxury, and a community designed for you.</p>
+        <div class="plan-card">
+        <img src="../img/cascades/master_plan.png" class="img-fluid" alt="Master Plan">
+        <a (click)="open('Download Floor Plan')" class="enquire-btn">ENQUIRE NOW</a>
+    </div>
+        
+      </div>
+  
+      <!-- Floor Plan Tab -->
+      <div class="tab-pane fade" id="floor" role="tabpanel">
+        <p class="plan-description">The Cascades Neopolis Where limitless living meets comfort, luxury, and a community designed for you.</p>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="plan-card">
+              <img src="../img/cascades/floor1.png" alt="3 BHK Villa" class="img-fluid mb-3">
+              <a (click)="open('Download Floor Plan')" class="enquire-btn">ENQUIRE NOW</a>
+              <div class="villa-label">3 BHK Villa</div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="plan-card">
+              <img src="../img/cascades/floor2.png" alt="4 BHK Villa" class="img-fluid mb-3">
+              <a (click)="open('Download Floor Plan')" class="enquire-btn">ENQUIRE NOW</a>
+              <div class="villa-label">4 BHK Villa</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

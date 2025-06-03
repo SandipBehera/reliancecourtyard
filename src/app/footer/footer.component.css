@@ -1,0 +1,71 @@
+.site-footer {
+    background-color: #00426b;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    border-top: #ddd 1px ridge;
+  
+    a {
+      color: #fff;
+      text-decoration: underline;
+  
+      &:hover {
+        color: #ddd;
+      }
+    }
+  }
+  
+  .floating-icon {
+    position: fixed;
+    bottom: 20px;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+  
+    .icon {
+      color: white;
+      font-size: 24px;
+    }
+  
+    &.left {
+      left: 20px;
+    }
+  
+    &.right {
+      right: 20px;
+    }
+  }
+  
+  .floating-whatsapp {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  
+    .icon {
+      color: white;
+      font-size: 28px;
+    }
+  
+    .text {
+      display: none; 
+    }
+  }
+  
