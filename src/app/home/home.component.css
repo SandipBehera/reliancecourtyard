@@ -54,8 +54,8 @@
   }
   
   .contact-form-box {
-    background-color: #00426b;
-    border: 1px solid #00426b;
+    background-color: #67ad4c;
+    border: 1px solid #67ad4c;
     border-radius: 12px;
   }
   
@@ -97,7 +97,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #00426b;
+    background-color: #67ad4c;
     display: flex;
     justify-content: space-evenly;
     padding: 10px 0;

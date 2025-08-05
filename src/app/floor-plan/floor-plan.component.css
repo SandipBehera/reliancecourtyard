@@ -12,7 +12,7 @@
   .cta-btn {
     display: block;
     width: 100%;
-    background: #00426b;
+    background: #67ad4c;
     color: white;
     padding: 12px;
     font-size: 1rem;
@@ -30,7 +30,7 @@
     font-family: "Bebas Neue", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: #00426b; 
+    color: #67ad4c; 
     text-transform: uppercase; 
     font-size: 2rem; 
     font-weight: 700; 
@@ -40,7 +40,7 @@
   .plans-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #00426b;
+    color: #67ad4c;
     margin-bottom: 1rem;
     position: relative;
   }
@@ -55,8 +55,8 @@
   }
   
   .custom-tabs .nav-link.active {
-    color: #00426b;
-    border-bottom: 2px solid #00426b;
+    color: #67ad4c;
+    border-bottom: 2px solid #67ad4c;
   }
   
   .plan-description {
@@ -81,7 +81,7 @@
   
   .enquire-btn {
     display: inline-block;
-    background-color: #00426b;
+    background-color: #67ad4c;
     color: white;
     font-weight: bold;
     padding: 8px 20px;
@@ -92,13 +92,13 @@
   }
   
   .enquire-btn:hover {
-    background-color: #00426b;
+    background-color: #67ad4c;
   }
   
   .villa-label {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #00426b;
+    color: #67ad4c;
     border-top: 1px solid #ddd;
     padding-top: 10px;
   }

@@ -14,38 +14,53 @@ import { ModalComponent } from '../modal/modal.component';
 export class GalleryComponent {
   images = [
     {
-      thumbnail: 'img/cascades/luxury-apartments-cascades-neopolis-gallery-img1.jpg',
-      full: 'img/cascades/luxury-apartments-cascades-neopolis-gallery-img1.jpg',
+      thumbnail: 'img/elesym/gallery/19.webp',
+      full: 'img/elesym/gallery/19.webp',
       alt: 'Table Full of Spices',
     },
     {
-      thumbnail: 'img/cascades/luxury-apartments-cascades-neopolis-gallery-img2.jpg',
-      full: 'img/cascades/luxury-apartments-cascades-neopolis-gallery-img2.jpg',
+      thumbnail: 'img/elesym/gallery/01.webp',
+      full: 'img/elesym/gallery/01.webp',
       alt: 'Place Royale Bruxelles',
     },
     {
-      thumbnail: 'img/cascades/luxury-apartments-cascades-neopolis-gallery-img3.jpg',
-      full: 'img/cascades/luxury-apartments-cascades-neopolis-gallery-img3.jpg',
+      thumbnail: 'img/elesym/gallery/02.webp',
+      full: 'img/elesym/gallery/02.webp',
       alt: 'View of the City in the Mountains',
     },
     {
-      thumbnail: 'img/cascades/luxury-apartments-cascades-neopolis-gallery-img4.jpg',
-      full: 'img/cascades/luxury-apartments-cascades-neopolis-gallery-img4.jpg',
+      thumbnail: 'img/elesym/gallery/03.webp',
+      full: 'img/elesym/gallery/03.webp',
       alt: 'Place Royale Bruxelles',
     },
     {
-      thumbnail: 'img/cascades/luxury-apartments-cascades-neopolis-gallery-img5.jpg',
-      full: 'img/cascades/luxury-apartments-cascades-neopolis-gallery-img5.jpg',
+      thumbnail: 'img/elesym/gallery/04.webp',
+      full: 'img/elesym/gallery/04.webp',
       alt: 'Place Royale Bruxelles',
     },
     {
-      thumbnail: 'img/cascades/luxury-apartments-cascades-neopolis-gallery-img6.jpg',
-      full: 'img/cascades/luxury-apartments-cascades-neopolis-gallery-img6.jpg',
+      thumbnail: 'img/elesym/gallery/05.webp',
+      full: 'img/elesym/gallery/06.webp',
       alt: 'Place Royale Bruxelles',
     },
     {
-      thumbnail: 'img/cascades/luxury-apartments-cascades-neopolis-overview-img1.jpg',
-      full: 'img/cascades/luxury-apartments-cascades-neopolis-overview-img1.jpg',
+      thumbnail: 'img/elesym/gallery/07.webp',
+      full: 'img/elesym/gallery/07.webp',
+      alt: 'Table Full of Spices',
+    },
+    {
+      thumbnail: 'img/elesym/gallery/10.webp',
+      full: 'img/elesym/gallery/10.webp',
+      alt: 'Table Full of Spices',
+    },
+    {
+      thumbnail: 'img/elesym/gallery/14.webp',
+      full: 'img/elesym/gallery/14.webp',
+      alt: 'Table Full of Spices',
+    },
+    {
+      thumbnail: 'img/elesym/gallery/24.webp',
+      full: 'img/elesym/gallery/24.webp',
       alt: 'Table Full of Spices',
     }
   ];

@@ -22,7 +22,7 @@ export class ContactUsComponent {
       email: ['', [Validators.required, Validators.email]],
       countryCode: ['+91', [Validators.required, Validators.pattern(/^\+\d{1,4}$/)]], // Pattern ensures it starts with +
       phone: ['', [Validators.required, Validators.pattern(/^\d{10}$/)]],
-      projectName: ['The Cascades' ]
+      projectName: ['RelianceElysium' ]
     });
   }
 

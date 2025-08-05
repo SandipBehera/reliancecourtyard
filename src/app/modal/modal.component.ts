@@ -19,7 +19,7 @@ export class ModalComponent {
 
   myForm:UntypedFormGroup|any;
   loading = false;
-  @Input() user:User={name:'',email:'',phone:'', projectName:'The Cascades'};
+  @Input() user:User={name:'',email:'',phone:'', projectName:'RelianceElysium'};
  
   constructor(public activeModal: NgbActiveModal,private formbuilder:UntypedFormBuilder,private ServiceService: ServiceService) {
     this.myForm=this.formbuilder.group({
@@ -27,7 +27,7 @@ export class ModalComponent {
       email: ['', [Validators.required, Validators.email]],
       countryCode: ['+91', [Validators.required, Validators.pattern(/^\+\d{1,4}$/)]], // Pattern ensures it starts with +
       phone: ['', [Validators.required, Validators.pattern(/^\d{10}$/)]],
-      projectName: ['The Cascades' ]
+      projectName: ['RelianceElysium' ]
     })
   }
  
