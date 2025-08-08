@@ -15,7 +15,9 @@
       }
     }
   }
-  
+  .footer-logo{
+    width: 12vh;
+  }
   .floating-icon {
     position: fixed;
     bottom: 20px;
