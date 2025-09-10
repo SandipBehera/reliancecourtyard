@@ -41,7 +41,7 @@
   
   /* Upper Part */
   .stat-top {
-    background: #67ad4c;
+    background: #D2042D;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -192,7 +192,7 @@
     .cta-btn {
       display: block;
       width: 100%;
-      background: #67ad4c;
+      background: #D2042D;
       color: white;
       padding: 12px;
       font-size: 1rem;
@@ -256,6 +256,9 @@
     
     .text-brown {
       color: #6e4c2e;
+    }
+    .text-white {
+      color: #ffffff;
     }
     
     

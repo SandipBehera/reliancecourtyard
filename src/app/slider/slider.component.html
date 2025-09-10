@@ -1,58 +1,45 @@
 <ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
-    <ng-template ngbSlide>
-      <div class="carousel-item-wrapper">
-        <img [src]="ismobile ?'../img/elesym/Banner-2.webp':'../img/elesym/gallery/02.webp'" alt="Random first slide" />
-  
-        <!-- Black Overlay -->
-        <!-- <div class="overlay" [style.display]="ismobile ? 'absolute' : 'absolute'"></div> -->
-  
-        <!-- Centered Text Content -->
-        <div class="carousel-content" [style.display]="ismobile ? 'none' : 'absolute'">    
-          <div class="property-card">
-            <div class="card-content">
-              <h2>Reliance Elysium</h2>
-              <p class="location">
-                <mat-icon>map</mat-icon>Mokila, Hyderabad
-              </p>
-              <p class="rera">RERA Registration No:P02400007912</p>
-  
-              <hr />
-  
-              <div class="details">
-                <div class="bhk">
-                  <h3>3 & 4 BHK Flats</h3>
-                  <p>Luxury Apartments</p>
-                </div>
-                <div class="price">
-                  <h3>₹ 5750 PSF</h3>
-                  <p>Onwards <b style="color: red;">*</b></p>
-                </div>
+  <ng-template ngbSlide>
+    <div class="carousel-item-wrapper">
+      <img [src]="ismobile ? '../img/courtyard/mobile_img.jpeg' : '../img/courtyard/Reliance-Courtyard-Banner-Desktop-1.webp'"
+        alt="Random first slide" [style.object-fit]="ismobile ? 'inherit' : 'cover'" />
+
+      <!-- Black Overlay -->
+      <!-- <div class="overlay" [style.display]="ismobile ? 'absolute' : 'absolute'"></div> -->
+
+      <!-- Centered Text Content -->
+      <div class="carousel-content" [style.display]="ismobile ? 'none' : 'absolute'">
+        <div class="property-card">
+          <div class="card-content">
+            <h2>Reliance Courtyard</h2>
+            <p class="tagline">Spacious 2 BHK Homes &#64;₹54 Lakh<b style="color: red;">*</b></p>
+            <p class="location">
+              <mat-icon>map</mat-icon>shankarpally, Hyderabad
+            </p>
+            <p class="rera">OC Received</p>
+            <p class="rera">No GST
+              Ready to Move in NOW</p>
+            <p class="rera">RERA Registration No:P02400004491</p>
+
+            <hr />
+
+            <div class="details">
+              <div class="bhk">
+                <h3>2 BHK Flats</h3>
+                <p>Spacious Apartments</p>
               </div>
-  
-              <button class="cta-btn" (click)="open('Get Price Breakdown')">Get Price Breakdown</button>
-            </div>
-            <div class="vector-bg"></div>
-          </div>
-        </div>
-        <div class="carousel-content" [style.display]="ismobile ? 'absolute' : 'none'" >    
-          <div class="property-card" style="background-color:  rgb(255 255 255 / 78%) !important;">
-            <div class="card-content" style="justify-content: center;">
-              <img src="../img/elesym/Reliance_Elysium_Logo.webp" alt="Logo" class="logo" style="height: auto;"/>
-              <!-- <div style="display: flex;justify-content: center;">
-              <span style="text-align: center;color:#fff;padding: 0.5rem;font-size: 12px;">Developed by</span>
+              <div class="price">
+                <h3>₹54 Lakh</h3>
+                <p>Onwards <b style="color: red;">*</b></p>
               </div>
-              <div style="display: flex;gap:10px; align-items: center;justify-content: center;">
-                <div>
-                  <img src="../img/elesym/ft-logo.webp" alt="Reliance Builder" class="company-logo" style="height:6vh !important;width: auto;"/>
-                </div>
-                
-              </div> -->
-              <button class="cta-btn" (click)="open('Get Price Breakdown')">Get Price Breakdown</button>
             </div>
-            <!-- <div class="vector-bg"></div> -->
+
+            <button class="cta-btn" (click)="open('Get Price Breakdown')">Get Price Breakdown</button>
           </div>
+          <div class="vector-bg"></div>
         </div>
       </div>
-    </ng-template>
-  </ngb-carousel>
-  
+
+    </div>
+  </ng-template>
+</ngb-carousel>

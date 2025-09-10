@@ -13,55 +13,43 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class ProjectDetailsComponent {
   stats = [
-    { value: '4.34 Acres', label: 'Land Area' },
-    { value: '3', label: 'Towers' },
-    { value: 'G+14 & G+16', label: 'Floors' },
-    { value: '347', label: 'Homes' },
+    { value: '1.3 Acres', label: 'Land Area' },
+    { value: '1', label: 'Towers' },
+    { value: 'G+7', label: 'Floors' },
+    { value: '131', label: 'Homes' },
   ];
     amenities = [
       {
-        title: 'Sports Arena',
+        title: 'Project Highlights',
         icon:'img/cascades/sky_garden.png',
         subtitle: 'Exclusive spaces with a view, designed for relaxation and high-end Sports Activities.',
         features: [
-          'Jogging Track',
-          'Badminton Court',
-          'Kids Play Area',
-          'Multi-purpose Court',
-          'Gym',
-          'Yoga & Meditation Zone',
+          'Located at Shankarpally',
+          '131 thoughtfully designed 2 BHKs',
+          '7,500 Sq. Ft. Clubhouse',
+          '70% open spaces',
+          '100% Vaastu oriented design',
         ]
       },
       {
-        title: 'Parks & Gardens',
+        title: '25+ Amenities',
         icon:'img/cascades/sky_laung.png',
         subtitle: 'Beautifully landscaped gardens and parks for relaxation and leisure.',
         features: [
-          'Pet Park',
-          'Zen Garden',
-          'Elderly Park',
+          'Gymnasium',
+          'Tot Lots',
+          'Kids Play Area',
+          'Provision for Reading Room',
+          '3 Guest Room',
+          'Indoor Games Room',
+          'Walking Track',
+          'AC Function Hall',
+          'Basket Ball Area',
+          'Provision for Grocery Store',
+          '24×7 Power Back-up',
+          'ECO STP'
         ]
-      },
-      {
-        title: 'Entertainment Zone',
-        icon:'img/cascades/tower_laung.png',
-        subtitle: 'A vibrant space for socializing and entertainment with family and friends.',
-        features: [
-          'Amphitheatre',
-          'Banquet Hall',
-          'Card Room',
-          'Library'
-        ]
-      },
-      {
-        title: 'Lounge & Club House',
-        icon:'img/cascades/club_house.png',
-        subtitle: 'A luxurious space for relaxation and social gatherings.',
-        features: [
-          'Business Lounge',
-        ]
-      },
-     
+      }
     ];
   showNavigationArrows = false;
 	showNavigationIndicators = false;

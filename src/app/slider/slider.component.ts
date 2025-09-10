@@ -23,7 +23,7 @@ export class SliderComponent {
       this.ismobile = window.innerWidth <= 768;
     }
     console.log('ismobile', this.ismobile);
-    this.VisitorTrackerService.logVisitor('https://relianceelysium.keyonprop.com').subscribe({
+    this.VisitorTrackerService.logVisitor('https://RelianceCourtyard.keyonprop.com').subscribe({
       next: (res) => console.log('Visitor logged', res),
       error: (err) => console.error('Error logging visitor:', err)
     });

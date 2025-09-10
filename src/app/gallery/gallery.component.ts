@@ -14,53 +14,38 @@ import { ModalComponent } from '../modal/modal.component';
 export class GalleryComponent {
   images = [
     {
-      thumbnail: 'img/elesym/gallery/19.webp',
-      full: 'img/elesym/gallery/19.webp',
+      thumbnail: 'img/courtyard/Reliance-Courtyard-Banner-Desktop-1.webp',
+      full: 'img/courtyard/Reliance-Courtyard-Banner-Desktop-1.webp',
       alt: 'Table Full of Spices',
     },
     {
-      thumbnail: 'img/elesym/gallery/01.webp',
-      full: 'img/elesym/gallery/01.webp',
+      thumbnail: 'img/courtyard/Reliance-Courtyard-Banner-Desktop-2.webp',
+      full: 'img/courtyard/Reliance-Courtyard-Banner-Desktop-2.webp',
       alt: 'Place Royale Bruxelles',
     },
     {
-      thumbnail: 'img/elesym/gallery/02.webp',
-      full: 'img/elesym/gallery/02.webp',
+      thumbnail: 'img/courtyard/gallery/08.webp',
+      full: 'img/courtyard/gallery/08.webp',
       alt: 'View of the City in the Mountains',
     },
     {
-      thumbnail: 'img/elesym/gallery/03.webp',
-      full: 'img/elesym/gallery/03.webp',
+      thumbnail: 'img/courtyard/gallery/01.webp',
+      full: 'img/courtyard/gallery/01.webp',
       alt: 'Place Royale Bruxelles',
     },
     {
-      thumbnail: 'img/elesym/gallery/04.webp',
-      full: 'img/elesym/gallery/04.webp',
+      thumbnail: 'img/courtyard/gallery/04.webp',
+      full: 'img/courtyard/gallery/04.webp',
       alt: 'Place Royale Bruxelles',
     },
     {
-      thumbnail: 'img/elesym/gallery/05.webp',
-      full: 'img/elesym/gallery/06.webp',
+      thumbnail: 'img/courtyard/gallery/06.webp',
+      full: 'img/courtyard/gallery/06.webp',
       alt: 'Place Royale Bruxelles',
     },
     {
-      thumbnail: 'img/elesym/gallery/07.webp',
-      full: 'img/elesym/gallery/07.webp',
-      alt: 'Table Full of Spices',
-    },
-    {
-      thumbnail: 'img/elesym/gallery/10.webp',
-      full: 'img/elesym/gallery/10.webp',
-      alt: 'Table Full of Spices',
-    },
-    {
-      thumbnail: 'img/elesym/gallery/14.webp',
-      full: 'img/elesym/gallery/14.webp',
-      alt: 'Table Full of Spices',
-    },
-    {
-      thumbnail: 'img/elesym/gallery/24.webp',
-      full: 'img/elesym/gallery/24.webp',
+      thumbnail: 'img/courtyard/DJI_20250616115350_0172_D-min-scaled.webp',
+      full: 'img/courtyard/DJI_20250616115350_0172_D-min-scaled.webp',
       alt: 'Table Full of Spices',
     }
   ];

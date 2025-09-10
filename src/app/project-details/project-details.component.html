@@ -15,7 +15,7 @@
     <ng-template ngbSlide>
       <div class="carousel-item-wrapper position-relative">
         <img
-          src="../img/cascades/luxury-apartments-cascades-neopolis-gallery-img5.jpg"
+          src="../img/courtyard/DJI_20250616115350_0172_D-min-scaled.webp"
           class="w-100"
           style="object-fit: cover; height: 100vh;"
           alt="Background Image"
@@ -29,27 +29,33 @@
           [style.left]="'0'"
           [style.right]="'0'"
           [style.bottom]="'0'"
-          style="background: rgba(255,255,255,0.95); overflow-y: auto;"
+          style="background: rgb(10 10 10 / 48%); overflow-y: auto;"
         >
           
   
           <div class="container my-5">
             <div class="row g-4">
-              <div class="col-md-6" *ngFor="let amenity of amenities">
-                <div class="p-4 rounded bg-light h-100 shadow-sm">
+              <div class="col-md-12" *ngFor="let amenity of amenities">
+                <div class="p-4 rounded bg-transparent h-100 shadow-sm">
                   <div class="d-flex align-items-start">
                     <!-- Icon Placeholder -->
-                    <div class="me-3">
-                      <div class="icon-placeholder bg-transparent text-white d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-                        <img [src]="amenity.icon" alt="{{ amenity.title }}" class="img-fluid" style="max-width: 100%; max-height: 100%;" />
-                      </div>
-                    </div>
                     <div>
-                      <h5 class="fw-bold text-uppercase text-brown mb-1">{{ amenity.title }}</h5>
-                      <p class="small text-muted mb-2">{{ amenity.subtitle }}</p>
-                      <ul class="small text-dark ps-3 mb-0">
+                      <h1 class="fw-bold text-uppercase text-white mb-1">{{ amenity.title }}</h1>
+                      <p class="small  mb-2 text-white">{{ amenity.subtitle }}</p>
+                      <!-- <ul class="small text-dark ps-3 mb-0 text-white">
                         <li *ngFor="let item of amenity.features">{{ item }}</li>
-                      </ul>
+                      </ul> -->
+                      <div class="row row-cols-1 row-cols-md-2 g-3 mt-2">
+                        <div class="col-md-4" *ngFor="let item of amenity.features">
+                          <div class="card h-100 bg-transparent border-0">
+                            <!-- <img [src]="item.img" class="card-img-top rounded" alt="Amenity Image" /> -->
+                            <div class="card-body p-2 d-flex align-items-center">
+                              <mat-icon class="me-2 text-white" style="font-size: 24px;">check_circle</mat-icon>
+                              <p class="card-text large text-white">{{ item }}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

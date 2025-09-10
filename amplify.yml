@@ -10,7 +10,7 @@ frontend:
       commands:
         - npm run build   
   artifacts:
-    baseDirectory: dist/RelianceElysium/browser
+    baseDirectory: dist/courtyard/browser
     files:
       - '**/*'
   cache:

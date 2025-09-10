@@ -67,7 +67,7 @@
   .cta-btn {
     display: block;
     width: 100%;
-    background: #67ad4c;
+    background: #D2042D;
     color: white;
     padding: 12px;
     font-size: 1rem;
@@ -135,7 +135,7 @@
   
   /* Upper Part */
   .stat-top {
-    background: #67ad4c;
+    background: #D2042D;
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -334,14 +334,84 @@
         }
       }
 
-.overview-text{
-  font-family: "Bebas Neue", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  color: #67ad4c; 
-  text-transform: uppercase; 
-  font-size: 2rem; 
-  font-weight: 700; 
+.video-section {
   position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
 }
-      
+
+.video-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: 1;
+}
+
+.video-content {
+  position: absolute;
+  top: 0; bottom: 0;
+  right: 0;
+  width: 50%;
+  padding: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  text-align: left;
+}
+
+.video-overview-text {
+  border-bottom: 3px double #D2042D;
+  display: inline-block;
+}
+
+.stats {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.buttons a {
+  background-color: #D2042D;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Playfair Display", Georgia, serif;
+  box-shadow: 1px 1px #d8b50db5;
+}
+
+/* 📱 Mobile view */
+@media (max-width: 768px) {
+  .video-content {
+    width: 100%;          /* full width */
+    right: auto;          /* no right pinning */
+    left: 0;              /* align to left */
+    top: 0; bottom: auto; /* position at top */
+    padding: 1.5rem;
+    justify-content: flex-start; /* text flows naturally */
+  }
+
+  .video-section video {
+    height: 100vh;  /* full height video background */
+  }
+}

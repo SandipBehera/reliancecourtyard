@@ -1,82 +1,63 @@
 <div class="property-card" [style]="{ display: ismobile ? 'block' : 'none' }">
     <div class="card-content">
-      <h2>Reliance Elysium</h2>
-      <p class="location">
-        <mat-icon>map</mat-icon> Mokila, Hyderabad
-      </p>
-      <p class="rera">RERA Registration No: <span>P02400007912</span></p>
-  
-      <hr />
-  
-      <div class="details">
-        <div class="bhk">
-          <p>3 & 4 BHK Flats
-          </p>
-          <p>Luxury Apartments</p>
-        </div>
-        <div class="price">
-          <p>₹ 5750 - 6500 PSF</p>
-          <p>Onwards<b style="color: red;">*</b></p>
-        </div>
-      </div>
-  
-      <button class="cta-btn" (click)="open('Get Price Breakdown')">Get Price Breakdown</button>
-    </div>
+            <h2>Reliance Courtyard</h2>
+            <p class="tagline">Spacious 2 BHK Homes &#64;₹54 Lakh<b style="color: red;">*</b></p>
+            <p class="location">
+              <mat-icon>map</mat-icon>shankarpally, Hyderabad
+            </p>
+            <p class="rera">OC Received</p>
+            <p class="rera">No GST
+              Ready to Move in NOW</p>
+            <p class="rera">RERA Registration No:P02400004491</p>
+
+            <hr />
+
+            <div class="details">
+              <div class="bhk">
+                <h3>2 BHK Flats</h3>
+                <p>Spacious Apartments</p>
+              </div>
+              <div class="price">
+                <h3>₹54 Lakh</h3>
+                <p>Onwards <b style="color: red;">*</b></p>
+              </div>
+            </div>
+
+            <button class="cta-btn" (click)="open('Get Price Breakdown')">Get Price Breakdown</button>
+          </div>
     <div class="vector-bg"></div>
   </div>
 
-    <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 2rem;padding: 2rem">
-      
-      <!-- Image Section -->
-      <div style="flex: 1 1 300px;">
-        <img src="../img/elesym/gallery/19.webp" alt="Hero" style="width: 100%; border-radius: 10px;" />
-      </div>
-  
-      <!-- Text Section -->
-      <div style="flex: 2 1 500px;">
-        <h2 class="overview-text">
-          <span style="border-bottom: 3px double #67ad4c;">Overview</span>
-        </h2>
-  
-        <p style="font-size: 15px; margin-top: 1rem;font-family: Playfair Display,Georgia,serif;color: black;">
-         A premium gated community project spanning 4.34 acres, featuring 3 towers with 347 units, offering MORE of everything.
-        </p>
-  
-        <p style="font-size: 15px;font-family: Playfair Display,Georgia,serif;color: black;">
-          ELYSIUM provides more space, more land area and a lower density with no high-rises nearby. ELYSIUM offers excellent airflow, ventilation, and panoramic views.
-        </p>
-        <p style="font-size: 15px;font-style: italic;font-family: Playfair Display,Georgia,serif;"> Mokila is a highly sought-after location known for its luxury, cleaner environment and peaceful surroundings.
-        </p>
-  
-        <!-- Stat Grid -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem; font-size: 16px;color: black;">
-          <div>
-            <strong>Unit Type :</strong><br/>
-            <span style="color: #67ad4c; font-weight: 500;font-family: Playfair Display,Georgia,serif;">3 & 4 Luxury Apartments</span>
-          </div>
-          <div>
-            <strong>Price Range :</strong><br/>
-            <span style="color: #67ad4c; font-weight: 500;font-family: Playfair Display,Georgia,serif;">₹ 5750 - 6500 PSF<b style="color: red;">*</b></span>
-          </div>
-          <div>
-            <strong>Super Built-Up Area :</strong><br/>
-            <span style="color: #67ad4c; font-weight: 500;font-family: Playfair Display,Georgia,serif;">2253 - 4825 Sq.Ft.</span>
-          </div>
-          <div>
-            <strong>Location :</strong><br/>
-            <span style="color: #67ad4c; font-weight: 500;font-family: Playfair Display,Georgia,serif;">Mokila, Hyderabad</span>
-          </div>
-        </div>
-  
-        <!-- Buttons -->
-        <div style="margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
-          <a (click)="open('Download Brochure')" href="#" style="background-color: #67ad4c; color: white; padding: 12px 20px; border-radius: 4px; text-decoration: none; font-weight: 600;font-family: Playfair Display,Georgia,serif;box-shadow: 1px 1px #d8b50db5;">
-            ⬇️ REQUEST TO DOWNLOAD BROCHURE
-          </a>
-  
-          <a (click)="open('Book Appointment')" href="#" style="background-color: #67ad4c; color: white; padding: 12px 20px; border-radius: 4px; text-decoration: none; font-weight: 600;font-family: Playfair Display,Georgia,serif;box-shadow: 1px 1px #d8b50db5;">
-            360° VIRTUAL TOUR – CLICK HERE
-          </a>
-        </div>
-      </div>
+  <div class="video-section">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline >
+    <source src="../img/courtyard/RE_Courtyard_Drone_Reel_1707-1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Dark Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Content -->
+  <div class="video-content">
+    <h2>Ready to Move in NOW</h2>
+    <h1>Discover Courtyard
+Where Wholesome Living, meets Convenience</h1>
+    <p>The best of Shankarpally in every single detail.</p>
+    <p><i>Mokila is a highly sought-after location...</i></p>
+
+    <div class="stats">
+      <div>Spacious 2 BHKs</div>
+      <div>108 to 1268 sq. ft.</div>
+      <div>Gated Community</div>
+      <div>131 Units</div>
     </div>
+
+    <div class="buttons">
+      <a (click)="open('Download Brochure')" href="#">⬇️ REQUEST TO DOWNLOAD BROCHURE</a>
+      <a (click)="open('Book Appointment')" href="#">360° VIRTUAL TOUR – CLICK HERE</a>
+    </div>
+  </div>
+</div>
+
+
